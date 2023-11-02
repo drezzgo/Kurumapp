@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Kurumapp</string>
+    <string name="kurumapp">Kurumapp</string>
+    <string name="no_cuenta">¿No tienes una cuenta?</string>
+    <string name="registrate">Registrate</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="Email">E-mail</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="olvidaste_tu_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="registrarte">Registrarte</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="confirma_la_contraseña">Confirma la contraseña</string>
+    <string name="consecionario">Consecionario</string>
+    <string name="servicio_oficial">Servicio oficial</string>
+    <string name="que_vas_a_administrar">¿Que piensas administrar?</string>
+    <string name="confirmar">Confirmar</string>
+</resources>
