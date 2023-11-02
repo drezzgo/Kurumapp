@@ -15,4 +15,6 @@
     <string name="servicio_oficial">Servicio oficial</string>
     <string name="que_vas_a_administrar">¿Que piensas administrar?</string>
     <string name="confirmar">Confirmar</string>
+    <string name="como_se_llamara_tu_concensionario">¿Como se llamara tu concensionario?</string>
+    <string name="nombre">Nombre</string>
 </resources>

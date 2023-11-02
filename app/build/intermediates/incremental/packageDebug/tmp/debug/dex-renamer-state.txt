@@ -1,4 +1,4 @@
-#Wed Nov 01 23:37:41 COT 2023
+#Fri Nov 03 00:51:53 COT 2023
 base.0=E\:\\Documentos\\Universidad\\Kurumapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=E\:\\Documentos\\Universidad\\Kurumapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=E\:\\Documentos\\Universidad\\Kurumapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
