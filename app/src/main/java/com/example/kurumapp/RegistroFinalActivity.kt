@@ -1,6 +1,7 @@
 package com.example.kurumapp
 
 import android.content.ContentValues
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -25,14 +26,14 @@ class RegistroFinalActivity : AppCompatActivity() {
     }
 
     private fun insertar() {
-        val concesionario = etConcesionario.toString()
+        val concesionario = etConcesionario?.text.toString()
         val email = extraemail
         val password = extrapassword
         val name = extraname
 
 
         if (concesionario.isNotEmpty()) {
-            val conexion = SQLite(this, "Concecionario", null, 1)
+            val conexion = SQLite(this, "Concesionario", null, 1)
             val bd = conexion.writableDatabase
             val registro = ContentValues()
             registro.put("nombre_concesionario", concesionario)
@@ -43,6 +44,10 @@ class RegistroFinalActivity : AppCompatActivity() {
             etConcesionario?.setText("")
             Toast.makeText(this, "Se ha registrado exitosamente", Toast.LENGTH_LONG).show()
             conexion.close()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "Ponle un nombre al concensionario", Toast.LENGTH_SHORT).show()
         }
     }
 
