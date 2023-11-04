@@ -31,20 +31,24 @@ class LoginActivity : AppCompatActivity() {
 
         if (email.isNotEmpty() && password.isNotEmpty()) {
             val fila = bd.rawQuery(
-                "SELECT email, password, nombre " +
+                "SELECT email, password, nombre, tipo_cuenta " +
                         "FROM usuarios " +
                         "WHERE email='$email'", null
             )
 
-            if (fila.moveToFirst()) { // Verifica si existe un resultado en la consulta
-                val emailBD = fila.getString(0)
+            if (fila.moveToFirst()) {
                 val passwordBD = fila.getString(1)
                 val nombre = fila.getString(2)
+                val tipoCuenta = fila.getString(3)
 
                 if (password == passwordBD) {
-                    Toast.makeText(this, "Bienvenido $nombre", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, RegistroActivity::class.java)
-                    startActivity(intent)
+                    when (tipoCuenta) {
+                        "Administrador" -> {
+                            Toast.makeText(this, "Bienvenido $nombre", Toast.LENGTH_LONG).show()
+                            val intent = Intent(this, RegistroActivity::class.java)
+                            startActivity(intent)
+                        }
+                    }
                 } else {
                     Toast.makeText(this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
                 }

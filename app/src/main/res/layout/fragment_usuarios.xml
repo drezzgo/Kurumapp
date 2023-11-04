@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Botones para realizar operaciones CRUD -->
+    <Button
+        android:id="@+id/btnCrearUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Usuario" />
+
+    <Button
+        android:id="@+id/btnLeerUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leer Usuarios" />
+
+    <Button
+        android:id="@+id/btnActualizarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Usuario" />
+
+    <Button
+        android:id="@+id/btnEliminarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Usuario" />
+
+    <!-- Lista para mostrar usuarios -->
+    <ListView
+        android:id="@+id/listaUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
