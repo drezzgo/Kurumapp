@@ -28,16 +28,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.Kurumapp" >
         <activity
-            android:name="com.example.kurumapp.TipoCuentasActivity"
+            android:name="com.example.kurumapp.HomeAdActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kurumapp.RegistroFinalActivity"
             android:exported="false" />
         <activity
             android:name="com.example.kurumapp.RegistroActivity"
             android:exported="false" />
         <activity
             android:name="com.example.kurumapp.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.kurumapp.login"
             android:exported="false" />
         <activity
             android:name="com.example.kurumapp.MainActivity"

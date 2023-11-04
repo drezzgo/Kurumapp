@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
                     when (tipoCuenta) {
                         "Administrador" -> {
                             Toast.makeText(this, "Bienvenido $nombre", Toast.LENGTH_LONG).show()
-                            val intent = Intent(this, RegistroActivity::class.java)
+                            val intent = Intent(this, HomeAdActivity::class.java)
                             startActivity(intent)
                         }
                     }

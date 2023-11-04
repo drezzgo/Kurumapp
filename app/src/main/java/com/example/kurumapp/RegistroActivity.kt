@@ -43,7 +43,7 @@ class RegistroActivity : AppCompatActivity() {
             Toast.makeText(this, "Epa son iguales", Toast.LENGTH_SHORT).show()
             true
         } else {
-            Toast.makeText(this, if (nombre.isEmpty() || email.isEmpty()) "Completa el 0formulario" else "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, if (nombre.isEmpty() || email.isEmpty()) "Completa el formulario" else "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
             false
         }
     }

@@ -19,7 +19,11 @@ font nunito_bold
 font nunito_light
 font nunito_semibold
 id Caja
+id btnActualizarUsuario
+id btnCrearUsuario
+id btnEliminarUsuario
 id btnIniciarSesion
+id btnLeerUsuarios
 id btnLogin
 id btnRegistro
 id btnRegistroF
@@ -29,7 +33,9 @@ id etEmail
 id etNombre
 id etPassword
 id etPasswordC
+id frameContainer
 id imageView
+id listaUsuarios
 id logo
 id textView2
 id textView3
@@ -38,10 +44,12 @@ id tvNombre
 id tvPrueba
 id tvRegistro
 id view
+layout activity_home_ad
 layout activity_login
 layout activity_main
 layout activity_registro
 layout activity_registro_final
+layout fragment_usuarios
 mipmap ic_launcher
 mipmap ic_launcher_round
 string Email
@@ -52,6 +60,7 @@ string confirma_la_contraseña
 string confirmar
 string consecionario
 string contraseña
+string hello_blank_fragment
 string iniciar_sesion
 string kurumapp
 string no_cuenta
